@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link href="Css/register.css" type="text/css" rel="stylesheet" />
+        <title>摄影网-注册</title>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="Img/logo.png">
+            <ul>
+                <li>&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#">帮助</a></li>
+            </ul>
+        </header>
+        
+        <nav>
+            <ul>
+                <li class="first_li">
+                    <a href="Index.html" class="nav_button">首页</a>
+                </li>
+                <li class="first_li">
+                    <a href="#" class="nav_button">摄影分类</a>
+                    <ul class="detail_nav">
+                        <li><a href="#" class="nav_button">人像摄影</a></li>
+                        <li><a href="#" class="nav_button">静物摄影</a></li>
+                        <li><a href="#" class="nav_button">风景摄影</a></li>
+                        <li><a href="#" class="nav_button">美食摄影</a></li>
+                        <li><a href="#" class="nav_button">运动摄影</a></li>
+                        <li><a href="#" class="nav_button">时尚摄影</a></li>
+                        <li><a href="#" class="nav_button">新闻摄影</a></li>
+                    </ul>
+                </li>
+                <li class="first_li">
+                    <a href="#" class="nav_button">摄影构图</a>
+                    <ul class="detail_nav">
+                        <li><a href="#" class="nav_button">中心构图</a></li>
+                        <li><a href="#" class="nav_button">三分法构图</a></li>
+                        <li><a href="#" class="nav_button">水平线构图</a></li>
+                        <li><a href="#" class="nav_button">对称式构图</a></li>
+                        <li><a href="#" class="nav_button">引导式构图</a></li>
+                        <li><a href="#" class="nav_button">三角形构图</a></li>
+                        <li><a href="#" class="nav_button">对角线构图</a></li>
+                        <li><a href="#" class="nav_button">曲线构图</a></li>
+                    </ul>
+                </li>
+
+                <li class="first_li">
+                    <a href="#" class="nav_button">摄影入门</a>
+                    <ul class="detail_nav">
+                        <li><a href="#" class="nav_button">认识相机</a></li>
+                        <li><a href="#" class="nav_button">熟悉曝光</a></li>
+                        <li><a href="#" class="nav_button">掌握测光</a></li>
+                        <li><a href="#" class="nav_button">了解光线</a></li>
+                        <li><a href="#" class="nav_button">运用构图</a></li>
+                        <li><a href="#" class="nav_button">塑造光彩</a></li>
+                    </ul>
+                </li>
+                <li class="first_li">
+                    <a href="#" class="nav_button">摄影大赛</a>
+                    <ul class="detail_nav">
+                        <li><a href="#" class="nav_button">IPPA</a></li>
+                        <li><a href="#" class="nav_button">WORLD PRESS PHOTO</a></li>
+                        <li><a href="#" class="nav_button">索尼世界摄影大赛</a></li>
+                        <li><a href="#" class="nav_button">IPOTY国际摄影师大赛</a></li>
+                        <li><a href="#" class="nav_button">哈苏摄影大师赛</a></li>
+                        <li><a href="#" class="nav_button">普利策新闻奖</a></li>
+                        <li><a href="#" class="nav_button">NPC尼康摄影大赛</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <article>
+            <form action="#">
+                <h2>用户注册</h2>
+                <table>
+                    <!--账号-->
+                    <tr>
+                        <td class="left">账号</td>
+                        <td class="right">
+                            <input type="text" id="username">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left"></td>
+                        <td class="right" id="username_msg" style="width:300px"></td>
+                    </tr>
+
+                    <!--密码-->
+                    <tr>
+                        <td class="left">密码</td>
+                        <td class="right">
+                            <input type="password" id="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left"></td>
+                        <td class="right" id="password_msg"></td>
+                    </tr>
+
+                    <!--确认密码-->
+                    <tr>
+                        <td class="left">确认密码</td>
+                        <td class="right">
+                            <input type="password" id="repassword">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left"></td>
+                        <td class="right" id="repassword_msg" style="width:300px"></td>
+                    </tr>
+
+                    <!--性别-->
+                    <tr>
+                        <td class="left" type="radio">性别</td>
+                        <td class="right">
+                            <input type="radio" name="sex" value="男" id="sex_boy"/><span>男</span><br/>
+                            <input type="radio" name="sex" value="女" id="sex_girl"/><span>女</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left"></td>
+                        <td class="right" id="sex_msg" style="width:300px"></td>
+                    </tr>
+
+                    <!--年龄-->
+                    <tr>
+                        <td class="left">年龄</td>
+                        <td class="right">
+                            <input type="text" id="age">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left"></td>
+                        <td class="right" id="age_msg" style="width:300px"></td>
+                    </tr>
+
+                    <!--邮箱-->
+                    <tr>
+                        <td class="left">邮箱</td>
+                        <td class="right">
+                            <input type="text" id="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left"></td>
+                        <td class="right" id="email_msg" style="width:300px"></td>
+                    </tr>
+
+
+                    <!--验证码-->
+                    <tr>
+                        <td class="left">验证码</td>
+                        <td class="right">
+                            <input id="code" type="captcha" class="captcha" style="width:75px;">
+                            <span id="checkCode" class="code"></span>
+                            <span onclick="createCode(4)" class="nextCode">看不清?点击切换</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="left"></td>
+                        <td class="right" id="code_msg"></td>
+                    </tr>
+
+
+                </table>
+
+           <a href="login.html">已有账号,去登录</a><br/>
+           <input type="sumit" value="注册" class="login">
+           </form> 
+
+        </article>
+
+        
+        <footer>
+            <ul>
+                <li><a href="#">关于我们</a></li>
+                <li>|</li>
+                <li><a href="#">联系我们</a></li>
+                <li>|</li>
+                <li><a href="#">意见建议</a></li>
+                <li>|</li>
+                <li><a href="#">帮助中心</a></li>
+                <li>|</li>
+                <li><a href="#">使用条款</a></li>
+            </ul>
+
+            <span>仲恺农业工程学院《网页设计基础及JavaScript》课程设计</span><br/>
+            <span>计算机214+202110244419+林海鹏</span>
+
+        </footer>
+
+        <script>
+
+             //验证账号
+             username.onblur=function(){
+                //4到16位（字母，数字，下划线，减号）
+                var usernameText=username.value;
+                var reg=/^[a-zA-Z0-9_-]{4,16}$/;
+                if(reg.test(usernameText)==false){
+                    document.getElementById("username_msg").innerHTML="账号由字母，数字，下划线，减号组成,4到16位";
+                }else{
+                    document.getElementById("username_msg").innerHTML="";
+                }
+            }
+
+            //验证密码
+            password.onblur=function(){
+                //4到16位（字母，数字，下划线，减号）
+                var passwordText=password.value;
+                var reg=/^[a-zA-Z0-9_-]{4,16}$/;
+                if(reg.test(passwordText)==false){
+                    document.getElementById("password_msg").innerHTML="密码由字母，数字，下划线，减号组成,4到16位";
+                }else{
+                    document.getElementById("password_msg").innerHTML="";
+                }
+            }
+
+            //验证确认密码
+            repassword.onblur=function(){
+                //确认密码和密码一样
+                var repasswordText=repassword.value;
+                var passwordText=password.value;
+                if(repasswordText!=passwordText){
+                    document.getElementById("repassword_msg").innerHTML="确认密码和密码不相同";
+                }else{
+                    document.getElementById("repassword_msg").innerHTML="";
+                }
+            }
+
+            //验证年龄
+            age.onblur=function(){
+                //1-120之间有效
+                var ageText=age.value;
+                var reg=/^(?:[1-9][0-9]?|1[01][0-9]|120)$/;
+                if(reg.test(ageText)==false){
+                    document.getElementById("age_msg").innerHTML="年龄在1-120之间有效";
+                }else{
+                    document.getElementById("age_msg").innerHTML="";
+                }
+            }
+
+            //验证邮箱
+            email.onblur=function(){
+                //1-120之间有效
+                var emailText=email.value;
+                var reg=/^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.[a-zA-Z0-9]{2,6}$/;
+                if(reg.test(emailText)==false){
+                    document.getElementById("email_msg").innerHTML="不合法的邮箱";
+                }else{
+                    document.getElementById("email_msg").innerHTML="";
+                }
+            }
+
+
+             //检查验证码是否正确
+             code.onblur=function validateCode(){
+                //获取显示区生成的验证码
+                var checkCode = document.getElementById("checkCode").innerHTML;
+                //获取输入的验证码
+                var inputCode = code.value;
+                if (inputCode.toUpperCase() != checkCode.toUpperCase()){
+                    document.getElementById("code_msg").innerHTML="验证码错误";
+                }else{
+                    document.getElementById("code_msg").innerHTML="";
+                }   
+            }   
+
+            //页面加载时，生成随机验证码
+            window.onload=function(){
+                createCode(4);    
+            }
+            //生成验证码的方法
+            function createCode(length) {
+                var code = "";
+                var codeLength = parseInt(length); //验证码的长度
+                var checkCode = document.getElementById("checkCode");
+                //所有候选组成验证码的字符，当然也可以用中文的
+                var codeChars = new Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+                'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',
+                'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'); 
+                //循环组成验证码的字符串
+                for (var i = 0; i < codeLength; i++){
+                    //获取随机验证码下标
+                    var charNum = Math.floor(Math.random() * 62);
+                    //组合成指定字符验证码
+                    code += codeChars[charNum];
+                }
+                if (checkCode){
+                    //为验证码区域添加样式名
+                    checkCode.className = "code";
+                    //将生成验证码赋值到显示区
+                    checkCode.innerHTML = code;
+                }
+            }
+
+        </script>
+       
+    </body>
+
+</html>

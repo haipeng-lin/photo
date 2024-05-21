@@ -1,0 +1,256 @@
+*{
+    margin: 0;/*设置上下边界为0，即所有组件根据宽度水平居中*/
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    list-style-type: none;
+}/*清空HTML元素或者标签的默认样式和边距*/
+
+/*一、头部部分*/
+header{
+    background-color:white;
+    width:100%;
+    height:80px;
+}/*header*/
+
+header img{
+    position: relative;
+    top:5px;
+    right:400px;
+    
+    width:120px;
+    height:50px;
+}/*图片大小及位置*/
+
+header ul{
+    position: relative;
+    left:400px;
+
+    display:table;
+    padding:0;
+    margin:0 auto;/*ul水平居中*/
+}/*登录注册所在的ul*/
+
+header ul li{
+    text-align: center;
+    float:left;
+}/*登录注册所在的li*/
+
+header ul li a{
+    color:black;
+}
+header ul li a:hover{
+    color:blue;
+    text-decoration:underline;
+}
+
+/*二、导航部分*/
+nav{
+    background-color:black;
+    width:100%;
+    height:50px;
+}/*nav导航栏*/
+
+nav ul{
+    display:table;/*重要*/
+    padding:0;
+    margin:0 auto;/*ul水平居中*/
+}
+nav ul li{
+    
+    height:50px;
+    width:150px;
+
+    text-align: center;/*导航li块内字体水平居中*/
+    line-height: 50px;/*行高和li高度一致==导航li内字体垂直居中*/
+    float:left;/*左浮动*/
+}
+
+.nav_button{
+    display:block;      /*设置为块元素，使得点击其他区域a标签可以生效*/
+    text-align: center;
+    color:white
+}/*导航项*/
+
+nav ul li a:hover{
+    background-color:red;
+    height:50px;
+}/*鼠标移到具体的导航项，背景色变化*/
+
+
+
+.detail_nav li{
+    height:33px;
+    width:200px;
+    text-align:center;
+    line-height:33px;
+}/*二级菜单各个li设置*/
+
+.detail_nav li a:hover{
+    background-color: red;
+    height:33px;
+}
+
+.detail_nav{
+    position:absolute;
+    display: none;
+}/*隐藏二级菜单*/
+
+.first_li:hover .detail_nav{
+    width:200px;
+    background-color: black;
+    display: block;
+}/*当鼠标移到各个一级菜单时，显示对应的二级菜单*/
+
+
+
+/*三、注册表单部分*/
+body{
+    background-image: url(../Img/注册banner.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+
+    text-align:center;
+}
+
+article{
+    background-color: white;
+    position: relative;
+    width:400px;
+    top:80px;
+    border:2px solid rgb(192, 184, 184);
+    border-radius:20px;
+
+    padding:0 13px;
+    display: inline-block;
+}
+
+form{
+    width:350px;
+    height:530px;
+    margin:0 auto;
+}
+
+form table tr td{
+    line-height:55px;
+}
+
+form table tr td:nth-child(even){
+    line-height: 5px;
+    font-size:10px;
+    text-align: left;
+    color:red;
+}
+
+form h2{
+    font-size:30px;
+    font-family: '宋体';
+}
+.left{
+    text-align-last: justify;
+    font-size:20px;
+    font-weight: lighter;
+    font-family: '楷体';
+    width:25%;
+}
+
+.right{
+    width:75%;
+}
+
+.right input{
+    width:150px;
+    height:20px;
+    float: left;
+    border:1px solid rgb(136, 131, 131);
+    border-radius: 10px;
+}
+.right a{
+    margin:5px;
+    font-size:15px;
+}
+
+
+#sex_boy,#sex_girl{
+    width:75px;
+}
+
+form table tr:nth-child(7) td span{
+    color:black;
+    font-size:10px;
+}
+
+
+
+
+
+.code{
+    width:75px;
+    height: 50px;
+    background-color: red;
+    font-size:20px;
+    cursor: pointer;
+    color:white;
+}
+
+.nextCode{
+    cursor: pointer;
+    color:blue;
+}
+
+
+.login{
+    margin:10px;
+    border:1px solid gray;
+    border-radius: 15px;
+    width:75px;
+    height:30px;
+    background-color: rgb(125, 125, 211);
+    color:white;
+    cursor:pointer;
+}/*登录按钮*/
+
+.login:hover{
+    background-color: rgb(16, 16, 221);
+}
+
+footer{
+    background-color:black;
+    width:100%;
+    height:100px;
+    text-align: center;
+
+    position: relative;
+    top:150px;
+}
+
+footer ul{
+    display:table;/*重要*/
+    padding:0;
+    margin:0 auto;/*ul水平居中*/
+    text-align: center;
+}
+
+footer ul li{
+    float:left;
+    margin:8px ;
+}
+
+footer ul li:nth-of-type(even){
+    color:orange;
+}
+
+footer ul li a{
+    color:rgba(255,255,255,0.8)
+}
+
+footer ul li a:hover{
+    color:red;
+}
+footer span{
+    color:white;
+}
+
+
+
